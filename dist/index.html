@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tittel</title>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../src/styles/style.css">
+	</head>
+
+	<body>
+		<header class="app-title">
+			<h1>Todo App</h1>
+		</header>
+
+		<main>
+			<section class="enter-todos-container">
+				<form class="todo-form">
+				
+					<label for="task-title-input">Task:</label>
+						<input 
+							type="text" 
+							name="task-title-input" 
+							class="task-title-input" 
+							placeholder="Enter task title">
+
+					<label for="task-title-input" class="title-error">Error</label>
+
+					<label for="">Date:</label>
+					<input type="date" name="task-date-input" class="task-date-input">
+					<label for="task-date-input" class="date-error">Error</label>
+
+					<label for="">Description:</label>
+						<textarea name="task-description-input" class="task-description-input" cols="30" rows="10"></textarea>
+
+					<label class="char-count">Type characters: 0</label>
+					<label for="task-description-error" class="description-error">Description error</label>
+
+					<button class="submit-task-button">Submit</button>
+					<label class="success-message"></label>
+					
+				</form>
+			</section>
+			<!-------------------------------->
+			<section class="display-todos-container">
+				<div class="filter-container">
+					<label for="filter-element">Filter:</label>
+					<select name="filter-element" class="filter-element">
+						<option value="0">All</option>
+						<option value="1">January</option>
+						<option value="2">February</option>
+						<option value="3">March</option>
+						<option value="4">April</option>
+						<option value="5">May</option>
+						<option value="6">June</option>
+						<option value="7">July</option>
+						<option value="8">August</option>
+						<option value="9">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+				</div>
+				<div class="todo-items-container">
+					<header class="display-todos-header">
+						<span class="task-number-header">Number</span>
+						<span class="task-title-header">Title</span>
+						<span class="task-date-header">Date</span>
+						<span class="task-description-header">Description</span>
+						<span class="task-delete-header"></span>
+					</header>
+					<ul class="todos-ul"></ul>
+				</div>
+			</section>
+		</main>
+		
+
+			<script src="./bundle.js"></script>
+	</body>
+
+</html>
+

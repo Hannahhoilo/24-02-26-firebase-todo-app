@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+}
+
+.app-title{
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #d2f6fe;
+}
+
+main {
+	height: 90%;
+	display: flex;
+}
+
+.enter-todos-container {
+	flex-basis: 25%;
+	background-color: #d2f6fe;
+	background: linear-gradient(to bottom, #d2f6fe, #00b0dc);
+}
+
+.display-todos-container {
+	flex-basis: 75%;
+	display: flex;
+	flex-direction: column;
+	background-color: #f6ebc6;
+	background: linear-gradient(to bottom, #f6ebc6, #f6dd9d);
+	border: 3px solid #5a8691;
+}
+
+.todo-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+}
+
+.todo-form input{
+	height: 2rem;
+	padding: 0 0.25rem;
+}
+
+.task-description-input {
+	resize: none;
+	padding: 0.25rem;
+}
+
+.submit-task-button {
+	height: 2rem;
+	cursor: pointer;
+}
+
+.filter-container {
+	flex-basis: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 4rem;
+	gap: 0.5rem;
+}
+
+.filter-element {
+	width: 10rem;
+	height: 2rem;
+	border-radius: 0.25rem;
+}
+
+.todo-items-container {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 90%;
+	align-items: center;
+}
+
+.display-todos-header, .todo-row {
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	border: 2px solid white;
+}
+
+.display-todos-header span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.task-number-header, .todo-number{
+	flex-basis: 5%;
+	background-color: brown;
+}
+
+.task-title-header, .todo-title {
+	flex-basis: 20%;
+	background-color: cornflowerblue;
+}
+
+.task-date-header, .todo-date {
+	flex-basis: 15%;
+	background-color: red;
+}
+
+.task-description-header, .todo-description {
+	flex-basis: 45%;
+	background-color: blue;
+}
+
+.task-delete-header, .todo-delete-container {
+	flex-basis: 15%;
+	background-color: darkkhaki;
+}
+
+.title-error, .date-error, .description-error {
+	visibility: hidden;
+}
+
+.delete-button {
+	width: 8rem;
+	height: 2rem;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	font-weight: bold;
+}
+
+.todos-ul {
+	width: 100%;
+}
+
+.todo-row span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
